@@ -22,6 +22,11 @@ bot.on("messageCreate", (message) => {
       content: `Desculpe ${message.author.username}-sama, não fui competente suficiente para atender seu pedido.`,
     });
   }
+  if (message.content === "s.help") {
+    message.reply({
+      content: "Eu nem te conheço, por que te ajudaria?!",
+    });
+  }
 });
 
 bot.login(process.env.TOKEN);
